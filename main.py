@@ -21,5 +21,5 @@ def main():
 
     start_game(starting_card)
 
-
-main()
+if __name__ == '__main__':
+    main()
