@@ -22,7 +22,7 @@ The last line is a hint, that says, what the player has to do now.
 
 ##The course of the game
 
-The game always starts with the user-controlled players turn. At the begining, the direction is *closkwise*. The player can play multiple cards at once, if the cards have the same number (with the exception of Jacks), and the first chosen card has to match the number or the suit of the last played card (if both of them actually have a suit). Suitless cards are considered Jokers and Queens, though Queens are only considered suitless, while in a players hand. The last chosen card will be the future last played card for the next players turn.
+The game always starts with the user-controlled players turn. At the begining, the direction is *clockwise*. The player can play multiple cards at once, if the cards have the same number (with the exception of Jacks), and the first chosen card has to match the number or the suit of the last played card (if both of them actually have a suit). Suitless cards are considered Jokers and Queens, though Queens are only considered suitless, while in a players hand. The last chosen card will be the future last played card for the next players turn.
 During a bots turn, the user is required to press Enter key to progress. This is so it is easier to keep up with the game.
 
 ##Controlls
