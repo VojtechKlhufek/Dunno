@@ -349,7 +349,10 @@ def check_and_perform_effect(played_card_list, player):
         swap_hands(player)
     # Q = choose a new suit and switch direction
     elif card_on_top[0] == Number.queen():
-        direction = not direction
+        if direction == "Clockwise":
+            direction = "Counter-clockwise"
+        else:
+            direction = "Clockwise"
         return choose_suit(player)
     # K = draw 3 and choose a new suit
     elif card_on_top[0] == Number.king():
