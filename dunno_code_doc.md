@@ -1,16 +1,16 @@
-#Dunno - Code documentation
+# Dunno - Code documentation
 
 ## What is this project about?
 
 Dunno is a card game based on mau-mau and created by me and Vojtěch Novotný. This is an electronic adaptation to this game and is made to be played by one player and two bots. The rules of the game are specified in the User documentation.
 
-##Used libraries
+## Used libraries
 
 In this project, I tried not to rely on many libraries, so I only use a couple, mostly for some simple tasks, which would be difficult without them. Firstly my project uses random, to shuffle the cards and also pick a random color, in case the starting card is a queen. Another one is os, which is used only to determine the way to clear the terminal, since a different command is used on Windows and Linux based operating systems. Then I use time, from which I use a sleep function to make a short break after an ace effect is applied and the last one is termcolor, to change the color of the text in the terminal.
 
 I was also hoping to use some library to make a GUI and was considering using pygame, since it seemed like the easiest way to do it, but I did not have enough time for that at the end.
 
-##Bot algorithm
+## Bot algorithm
 
 The bots are quite simple. They always have their cards in the order they drew them and try to play them in order and when they find a card, which can be played, they play it. If they play a card with an effect which needs a choice to be made, the bot has some algorithms to make these choices.
 
@@ -20,7 +20,7 @@ For a Jack of diamonds, they try to throw away other Jacks and then offensive ca
 
 For a queen or a king, the bots always pick their shortest color. Again it would have been nice, if they only played queens when they needed.
 
-##Modules and main data structures
+## Modules and main data structures
 
 The game is split into 4 modules, main.py, game_loop.py, init.py and cards_def.py. I decided to split it like this at the begining, because I thought it would make it easier to find the most important things. main.py is used to call the function deal_cards() from the init.py module, which deals cards to each player, and then main.py calls the start_game() from the game_loop.py module, which starts the game itself. The last module, called cards_def.py. In this module I defined all the cards and put them in a "deck" which I then shuffled.
 
@@ -30,6 +30,6 @@ In cards_def.py are also 2 classes, called Number and Suit. These classes are us
 
 The draw_pile is represented as a list, which is used as a queue, because a queue really nicely simulates a real deck of cards, since you draw from the top and in Dunno there is a rule which makes the cards go right at the bottom of the draw pile. Each players hand is also represented as a list.
 
-##Conclusion
+## Conclusion
 
 I think this project might have been a bit much for such a short time, but I am quite happy with how it went. There is still a couple rules missing which are in the original game, because they would have to work quite differently, since they mostly rely on the players being human, but I think that is not a huge problem. The game is playable and the bots usually do quite sensible things for their lack of intelligence. One thing that makes it a little dull in my opinion is the lack of GUI. It does not feel as if much is happening and it is quite easy to lose track of what the bots are doing (this is the main reason there is an input before each bots turn).
