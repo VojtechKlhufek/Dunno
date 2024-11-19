@@ -74,7 +74,7 @@ The player has to choose a new color. The next player draws 3 cards.
 
 The next player draws 5 cards. This card is suitless and cannot be defended against using a 3.
 
-###2 (except 2 of clubs), 4, 5, 6, 8, 9, 10 (defensive cards)
+### 2 (except 2 of clubs), 4, 5, 6, 8, 9, 10 (defensive cards)
 
 If the player has to draw cards, they can play a defensive card, which has the last cards suit and the number of this card is the same as the mandatory draw value.
 
